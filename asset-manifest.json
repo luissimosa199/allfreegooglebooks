@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/allfreegooglebooks/static/css/main.1d54aac1.css",
+    "main.js": "/allfreegooglebooks/static/js/main.fc593cfe.js",
+    "static/media/afgb_logo.png": "/allfreegooglebooks/static/media/afgb_logo.e5d27ccde9ac524d9efe.png",
+    "index.html": "/allfreegooglebooks/index.html",
+    "main.1d54aac1.css.map": "/allfreegooglebooks/static/css/main.1d54aac1.css.map",
+    "main.fc593cfe.js.map": "/allfreegooglebooks/static/js/main.fc593cfe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d54aac1.css",
+    "static/js/main.fc593cfe.js"
+  ]
+}
