@@ -26,15 +26,14 @@ const Searchbar = () => {
               img: elem.volumeInfo.imageLinks.thumbnail,
               authors: elem.volumeInfo.authors,
               publishedDate: elem.volumeInfo.publishedDate,
-              readLink: elem.accessInfo.webReaderLink,
+              readLink: elem.volumeInfo.previewLink
             });
           });
           // hacer una class para ocultar y togglearla
           document.querySelector(".pagination").style.opacity = 1;
-          document.querySelector(".searchInput").value = "";
-          document.querySelector(".central_logo").style.visibility = 'hidden';
-          document.querySelector(".central_logo").style.position = 'absolute';
+          document.querySelector(".central_logo").classList.add('hidden');
           // 
+          document.querySelector(".searchInput").value = "";
           sendUrl(requestURL);
           setResults(searchResults);
         })
@@ -54,13 +53,13 @@ const Searchbar = () => {
   return (
     <div className='container'>
       <div className='searchbar'>
-        <a href="#"><img className="header_logo" alt="afgb logo" src={smallLogo}></img></a>
+        <a href="http://luissimosa199.github.io/allfreegooglebooks/"><img className="header_logo" alt="afgb logo" src={smallLogo}></img></a>
         <input
           className='searchInput'
           type='text'
           placeholder='Nombre del libro, autor o tema'
         />
-        <button className="searchbar_btn" onClick={handleClick} type='button'>
+        <button className="btn searchbar_btn" onClick={handleClick} type='button'>
           Buscar
         </button>
       </div>

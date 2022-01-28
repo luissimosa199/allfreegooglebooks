@@ -20,7 +20,7 @@ const Pagination = (props) => {
   const prevIndex = () => {
     let newIdx = parseInt(page.textContent);
     if (newIdx === 0) {
-      alert("index 0");
+      alert("Esta es la primera página de resultados.");
     } else {
       let newUrl = url.replace(/Index=\d+&/gi, `Index=${newIdx-10}&`);
       newIdx -= 10;
