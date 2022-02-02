@@ -5,7 +5,7 @@ Con el fin de continuar aprendiendo sobre React, en esta ocasión quise utilizar
 ## Herramientas utilizadas:
 
 - HTML, JS, CSS
-- React(JS & DOM)
+- ReactJS
 - Google Books API
 
 ## Descripción
